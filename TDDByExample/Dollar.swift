@@ -8,15 +8,23 @@
 
 import UIKit
 
-class Dollar: NSObject {
-  var amount: Int
+struct Dollar {
+  fileprivate var amount: Int
   
   init(amount: Int) {
     self.amount = amount
-    super.init()
   }
   
   func times(_ multiplier: Int) -> Dollar {
     return Dollar(amount: amount * multiplier)
   }
+}
+
+extension Dollar: Equatable {
+  
+}
+
+
+func ==(lhs: Dollar, rhs: Dollar) -> Bool {
+  return lhs.amount == rhs.amount
 }

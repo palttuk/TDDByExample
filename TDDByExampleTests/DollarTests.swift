@@ -27,7 +27,7 @@ class DollarSpec: QuickSpec {
       it("is 10 dollars", closure: {
         let dollar = Dollar(amount: 5)
         let product = dollar.times(2)
-        expect(product.amount) == 10
+        expect(product) == Dollar(amount: 10)
       })
     })
     
@@ -35,9 +35,9 @@ class DollarSpec: QuickSpec {
       it("is 15 dollars", closure: { 
         let dollar = Dollar(amount: 5)
         var product = dollar.times(2)
-        expect(product.amount) == 10
+        expect(product) == Dollar(amount: 10)
         product = dollar.times(3)
-        expect(product.amount) == 15
+        expect(product) == Dollar(amount: 15)
         
       })
     }
