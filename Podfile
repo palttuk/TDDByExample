@@ -1,14 +1,15 @@
 platform :ios, '8.0'
-use_frameworks!
 
 target 'TDDByExample' do
+  use_frameworks!
+  
 	target 'TDDByExampleTests' do
-  		pod 'Kiwi'
+    inherit! :search_paths
+    pod 'Quick'
+    pod 'Nimble'
+#    pod 'Mockingjay'
 	end
   
-#  target 'TDDByExampleUITests' do
-#  		pod 'Kiwi'
-#  end
 
 end
 
