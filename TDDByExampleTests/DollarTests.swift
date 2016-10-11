@@ -13,7 +13,8 @@ import Nimble
 /*
  * describe a Dollar
  *    describe times 2
- *    it 10 dollar
+ *      it 10 dollar
+ *    describe times 2 and times 3
  */
 
 
@@ -25,11 +26,20 @@ class DollarSpec: QuickSpec {
     describe("times 2", {
       it("is 10 dollars", closure: {
         let dollar = Dollar(amount: 5)
-        dollar.times(2)
-        expect(dollar.amount) == 10
+        let product = dollar.times(2)
+        expect(product.amount) == 10
       })
     })
     
-
+    describe("") { 
+      it("is 15 dollars", closure: { 
+        let dollar = Dollar(amount: 5)
+        var product = dollar.times(2)
+        expect(product.amount) == 10
+        product = dollar.times(3)
+        expect(product.amount) == 15
+        
+      })
+    }
   }
 }
