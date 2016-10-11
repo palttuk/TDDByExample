@@ -31,7 +31,7 @@ class DollarSpec: QuickSpec {
       })
     })
     
-    describe("") { 
+    describe("times 2 and 3") {
       it("is 15 dollars", closure: { 
         let dollar = Dollar(amount: 5)
         var product = dollar.times(2)
