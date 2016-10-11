@@ -31,5 +31,20 @@ class FrancSpecs: QuickSpec {
         expect(franc.times(3)) == Franc(amount: 15)
       })
     })
+    
+    describe("5 Franc compare to" , {
+      context("5 francs", {
+        it("is Equal true ", closure: {
+          expect(Money.franc(amount: 5)) == Money.franc(amount: 5)
+        })
+      })
+      
+      context("6 Franc", {
+        it("is not Equal", closure: {
+          expect(Money.franc(amount: 6)) != Money.franc(amount: 5)
+        })
+      })
+    })
+
   }
 }

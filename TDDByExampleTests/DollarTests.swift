@@ -41,5 +41,20 @@ class DollarSpec: QuickSpec {
         
       })
     }
+    
+    describe("5 Dollar compare to" , {
+      context("5 dollars", { 
+        it("is Equal true ", closure: {
+          expect(Money.dollar(amount: 5)) == Money.dollar(amount: 5)
+        })
+      })
+      
+      context("6 dollars", {
+        it("is not Equal", closure: {
+          expect(Money.dollar(amount: 6)) != Money.dollar(amount: 5)
+        })
+      })
+    })
   }
+  
 }

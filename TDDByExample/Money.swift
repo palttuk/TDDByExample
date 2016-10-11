@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Money {
+class Money: Equatable {
   fileprivate var amount: Int
   
   init(amount: Int) {
@@ -20,10 +20,15 @@ class Money {
   }
 }
 
-extension Money: Equatable {
+extension Money {
+  static func dollar(amount: Int) -> Dollar {
+    return Dollar(amount: amount)
+  }
   
+  static func franc(amount: Int) -> Franc {
+    return Franc(amount: amount)
+  }
 }
-
 
 func ==(lhs: Money, rhs: Money) -> Bool {
   return lhs.amount == rhs.amount
