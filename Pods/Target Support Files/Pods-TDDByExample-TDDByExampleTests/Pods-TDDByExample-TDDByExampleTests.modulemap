@@ -1,0 +1,6 @@
+framework module Pods_TDDByExample_TDDByExampleTests {
+  umbrella header "Pods-TDDByExample-TDDByExampleTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
