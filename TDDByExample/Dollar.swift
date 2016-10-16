@@ -9,9 +9,5 @@
 import UIKit
 
 class Dollar: Money {
-  func times(_ multiplier: Int) -> Money {
-    return Dollar(amount: amount * multiplier, currency: currency)
-  }
-
 }
 

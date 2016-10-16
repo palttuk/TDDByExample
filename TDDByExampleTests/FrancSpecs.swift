@@ -47,7 +47,7 @@ class FrancSpecs: QuickSpec {
       
       context("5 Dollar", { 
         it("is not Equal", closure: { 
-          expect(Money.franc(amount: 5) != Money.dollar(amount: 5))
+          expect(Money.franc(amount: 5)) != Money.dollar(amount: 5)
         })
       })
     })

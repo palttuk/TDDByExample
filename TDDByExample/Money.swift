@@ -26,21 +26,35 @@ class Money: Equatable {
     self._currency = currency
   }
   
-//  func times(_ multiplier: Int) -> Money {
-//    return Money(amount: amount * multiplier, curr)
-//  }
+  func times(_ multiplier: Int) -> Money? {
+    return Money(amount: amount * multiplier, currency: currency)
+  }
 }
 
 extension Money {
-  static func dollar(amount: Int) -> Dollar {
+  static func dollar(amount: Int) -> Money {
     return Dollar(amount: amount, currency: "USD")
   }
   
-  static func franc(amount: Int) -> Franc {
+  static func franc(amount: Int) -> Money {
     return Franc(amount: amount, currency: "CHF")
   }
 }
 
 func ==(lhs: Money, rhs: Money) -> Bool {
-  return lhs.amount == rhs.amount
+  guard lhs.amount == rhs.amount else {
+    return false
+  }
+
+  guard lhs.currency == rhs.currency else {
+    return false
+  }
+  
+  return true
+}
+
+extension Money: CustomStringConvertible {
+  var description: String {
+    return String(amount) + " " + currency
+  }
 }
