@@ -24,11 +24,11 @@ class FrancSpecs: QuickSpec {
     
     describe("multiple 2 and 3", {
       it("is 15", closure: {
-        let franc = Franc(amount: 5)
+        let franc = Money.franc(amount: 5)
         let product = franc.times(2)
-        expect(product) == Franc(amount: 10)
+        expect(product) == Money.franc(amount: 10)
         
-        expect(franc.times(3)) == Franc(amount: 15)
+        expect(franc.times(3)) == Money.franc(amount: 15)
       })
     })
     
@@ -42,6 +42,12 @@ class FrancSpecs: QuickSpec {
       context("6 Franc", {
         it("is not Equal", closure: {
           expect(Money.franc(amount: 6)) != Money.franc(amount: 5)
+        })
+      })
+      
+      context("5 Dollar", { 
+        it("is not Equal", closure: { 
+          expect(Money.franc(amount: 5) != Money.dollar(amount: 5))
         })
       })
     })

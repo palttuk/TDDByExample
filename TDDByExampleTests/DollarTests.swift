@@ -25,19 +25,19 @@ class DollarSpec: QuickSpec {
     
     describe("times 2", {
       it("is 10 dollars", closure: {
-        let dollar = Dollar(amount: 5)
+        let dollar = Money.dollar(amount: 5)
         let product = dollar.times(2)
-        expect(product) == Dollar(amount: 10)
+        expect(product) == Money.dollar(amount: 10)
       })
     })
     
     describe("times 2 and 3") {
       it("is 15 dollars", closure: { 
-        let dollar = Dollar(amount: 5)
+        let dollar = Money.dollar(amount: 5)
         var product = dollar.times(2)
-        expect(product) == Dollar(amount: 10)
+        expect(product) == Money.dollar(amount: 10)
         product = dollar.times(3)
-        expect(product) == Dollar(amount: 15)
+        expect(product) == Money.dollar(amount: 15)
         
       })
     }

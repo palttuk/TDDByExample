@@ -8,25 +8,32 @@
 
 import Foundation
 
+
 class Money: Equatable {
-  fileprivate var amount: Int
+  fileprivate var _amount: Int
+
+  var amount: Int {
+    return _amount
+  }
+  fileprivate let currency: String
   
-  init(amount: Int) {
-    self.amount = amount
+  init(amount: Int, currency: String) {
+    self._amount = amount
+    self.currency = currency
   }
   
-  func times(_ multiplier: Int) -> Money {
-    return Money(amount: amount * multiplier)
-  }
+//  func times(_ multiplier: Int) -> Money {
+//    return Money(amount: amount * multiplier, curr)
+//  }
 }
 
 extension Money {
   static func dollar(amount: Int) -> Dollar {
-    return Dollar(amount: amount)
+    return Dollar(amount: amount, currency: "USD")
   }
   
   static func franc(amount: Int) -> Franc {
-    return Franc(amount: amount)
+    return Franc(amount: amount, currency: "CHF")
   }
 }
 
