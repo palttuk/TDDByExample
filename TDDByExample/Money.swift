@@ -11,15 +11,19 @@ import Foundation
 
 class Money: Equatable {
   fileprivate var _amount: Int
-
+  fileprivate let _currency: String
+  
   var amount: Int {
     return _amount
   }
-  fileprivate let currency: String
+
+  var currency: String {
+    return _currency
+  }
   
   init(amount: Int, currency: String) {
     self._amount = amount
-    self.currency = currency
+    self._currency = currency
   }
   
 //  func times(_ multiplier: Int) -> Money {
