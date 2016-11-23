@@ -13,6 +13,11 @@
 		082843B21DAD0EC400520FA1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 082843B11DAD0EC400520FA1 /* Assets.xcassets */; };
 		082843B51DAD0EC400520FA1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 082843B31DAD0EC400520FA1 /* LaunchScreen.storyboard */; };
 		082843D91DAD263800520FA1 /* DollarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 082843D81DAD263800520FA1 /* DollarTests.swift */; };
+		089243191DAD2AE7001AEAD0 /* Dollar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 089243181DAD2AE7001AEAD0 /* Dollar.swift */; };
+		0892431B1DAD2B11001AEAD0 /* Todo List in Resources */ = {isa = PBXBuildFile; fileRef = 0892431A1DAD2B11001AEAD0 /* Todo List */; };
+		08DC06BA1DAD350400375498 /* Franc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08DC06B91DAD350400375498 /* Franc.swift */; };
+		08DC06BC1DAD351B00375498 /* FrancSpecs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08DC06BB1DAD351B00375498 /* FrancSpecs.swift */; };
+		08DC06C21DAD3A3D00375498 /* Money.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08DC06C11DAD3A3D00375498 /* Money.swift */; };
 		2FEE101FCAFD10697E7BE51F /* Pods_TDDByExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B63B97066F9A58A9AE5C97ED /* Pods_TDDByExample.framework */; };
 		854079B7130D49223FC4C993 /* Pods_TDDByExample_TDDByExampleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B11F7C1ADF5CA51E14B49F1 /* Pods_TDDByExample_TDDByExampleTests.framework */; };
 		88E155D01D697DEB517ACFC9 /* Pods_TDDByExampleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA5C4B07ADCC957D8D3D1E3D /* Pods_TDDByExampleTests.framework */; };
@@ -39,6 +44,11 @@
 		082843BB1DAD0EC400520FA1 /* TDDByExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TDDByExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		082843C11DAD0EC400520FA1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		082843D81DAD263800520FA1 /* DollarTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DollarTests.swift; sourceTree = "<group>"; };
+		089243181DAD2AE7001AEAD0 /* Dollar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dollar.swift; sourceTree = "<group>"; };
+		0892431A1DAD2B11001AEAD0 /* Todo List */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Todo List"; sourceTree = "<group>"; };
+		08DC06B91DAD350400375498 /* Franc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Franc.swift; sourceTree = "<group>"; };
+		08DC06BB1DAD351B00375498 /* FrancSpecs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FrancSpecs.swift; sourceTree = "<group>"; };
+		08DC06C11DAD3A3D00375498 /* Money.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Money.swift; sourceTree = "<group>"; };
 		474B95E254E53461D05ED025 /* Pods_TDDByExample_TDDByExampleUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TDDByExample_TDDByExampleUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B11F7C1ADF5CA51E14B49F1 /* Pods_TDDByExample_TDDByExampleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TDDByExample_TDDByExampleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6909FEF6A9131553C9870C5 /* Pods-TDDByExampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TDDByExampleTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TDDByExampleTests/Pods-TDDByExampleTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -99,6 +109,9 @@
 				082843B11DAD0EC400520FA1 /* Assets.xcassets */,
 				082843B31DAD0EC400520FA1 /* LaunchScreen.storyboard */,
 				082843B61DAD0EC400520FA1 /* Info.plist */,
+				089243181DAD2AE7001AEAD0 /* Dollar.swift */,
+				08DC06B91DAD350400375498 /* Franc.swift */,
+				08DC06C11DAD3A3D00375498 /* Money.swift */,
 			);
 			path = TDDByExample;
 			sourceTree = "<group>";
@@ -108,6 +121,8 @@
 			children = (
 				082843C11DAD0EC400520FA1 /* Info.plist */,
 				082843D81DAD263800520FA1 /* DollarTests.swift */,
+				0892431A1DAD2B11001AEAD0 /* Todo List */,
+				08DC06BB1DAD351B00375498 /* FrancSpecs.swift */,
 			);
 			path = TDDByExampleTests;
 			sourceTree = "<group>";
@@ -234,6 +249,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0892431B1DAD2B11001AEAD0 /* Todo List in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -337,7 +353,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				08DC06BA1DAD350400375498 /* Franc.swift in Sources */,
+				08DC06C21DAD3A3D00375498 /* Money.swift in Sources */,
 				082843AD1DAD0EC400520FA1 /* ViewController.swift in Sources */,
+				089243191DAD2AE7001AEAD0 /* Dollar.swift in Sources */,
 				082843AB1DAD0EC400520FA1 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -347,6 +366,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				082843D91DAD263800520FA1 /* DollarTests.swift in Sources */,
+				08DC06BC1DAD351B00375498 /* FrancSpecs.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
